@@ -1,4 +1,4 @@
-from utils.json_handle import read_json, write_json
+from utils.json_handler import read_json, write_json
 
 DATA_BASE_PATCH = "./menu.json"
 
