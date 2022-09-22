@@ -12,7 +12,7 @@ def next_id(database_patch: str) -> int:
 
 def read_json(database_patch: str) -> list:
     try:
-        with open(database_patch, "r", encoding="utf8") as database:
+        with open(database_patch, "r") as database:
             database_data = json.load(database)
             return database_data
 
