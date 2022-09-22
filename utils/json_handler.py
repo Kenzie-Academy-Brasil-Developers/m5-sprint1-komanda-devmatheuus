@@ -17,7 +17,9 @@ def read_json(database_patch: str) -> list:
             database_data = json.load(database)
             return database_data
 
-    except FileNotFoundError or len(database_data) == 0:
+    except FileNotFoundError:
+        return []
+    except json.JSONDecodeError:
         return []
 
 

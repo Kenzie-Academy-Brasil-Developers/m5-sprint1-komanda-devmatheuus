@@ -1,7 +1,7 @@
 import unittest
 
-from freezegun import freeze_time
 from management.tab_handler import calculate_tab
+from freezegun import freeze_time
 
 
 class TestTabHandler(unittest.TestCase):
