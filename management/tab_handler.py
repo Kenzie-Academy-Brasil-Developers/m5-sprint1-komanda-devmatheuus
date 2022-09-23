@@ -1,6 +1,6 @@
+from cgi import test
 from utils.json_handler import read_json
-
-from datetime import datetime, timedelta
+from datetime import datetime
 
 FORMATED_DATE_STR = "%d/%m/%Y %H:%M:%S"
 
@@ -13,7 +13,6 @@ def date_debit_close():
 def calculate_tab(table_consumption: list) -> dict:
     products = read_json("./menu.json")
 
-    print(products)
     bill_values = []
 
     for product in products:
